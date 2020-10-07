@@ -1,0 +1,65 @@
+.container {
+  width: 100%;
+  padding-left: calc(( 100% - 1200px) / 2);
+  padding-right: calc(( 100% - 1200px) / 2);
+}
+@media all and (max-width: 770px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Tahoma, "Segoe UI";
+  box-sizing: border-box;
+}
+
+body {
+  background: #c6c6c6;
+}
+
+.container > div {
+  background: #fff;
+  width: 100%;
+  padding: 20px;
+  margin: 40px 0;
+}
+.container .entrer {
+  display: flex;
+  justify-content: space-between;
+}
+.container .entrer #input {
+  color: #707070;
+  height: 40px;
+  width: 50%;
+  padding-left: 20px;
+  font-weight: bold;
+}
+.container .entrer button {
+  color: #707070;
+  height: 40px;
+  width: 100px;
+  font-weight: bold;
+}
+.container .result {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 50px 50px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.container .result div {
+  display: inline-block;
+  color: #707070;
+  background: #c6c6c6;
+  text-align: center;
+  padding: 15px 20px;
+  width: 100%;
+  height: 50px;
+  box-shadow: 1px 1px 12px #464545;
+}
+
+/*# sourceMappingURL=style.css.map */
